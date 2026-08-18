@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://6mdsrlw2ynck"]
+
+[ext_resource type="PackedScene" uid="uid://btb6vbm2ccxoa" path="res://models/table.glb" id="1_4xfga"]
+
+[node name="Game" type="Node3D" unique_id=125816360]
+
+[node name="table" parent="." unique_id=1408413111 instance=ExtResource("1_4xfga")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.7380561, 0, -3.8199725)
