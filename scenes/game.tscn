@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://cjndrnuhkyl8t"]
 
 [ext_resource type="PackedScene" uid="uid://6mdsrlw2ynck" path="res://scenes/map.tscn" id="1_uwrxv"]
+[ext_resource type="PackedScene" uid="uid://d24jkt8tfo4se" path="res://scenes/green_apple.tscn" id="2_yqjtg"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_uwrxv"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -28,5 +29,8 @@ shadow_enabled = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.25284338, 0, 1.0808935)
 
 [node name="Camera3D" type="Camera3D" parent="." unique_id=1284784466]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.1204247, 0, -1.4291329)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.1204247, 0, -1.3985194)
 fov = 58.4
+
+[node name="green_apple2" parent="." unique_id=1252760644 instance=ExtResource("2_yqjtg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.0174954, 4.96918, -3.2198508)

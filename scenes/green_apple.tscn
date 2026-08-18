@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://d24jkt8tfo4se"]
+
+[ext_resource type="PackedScene" uid="uid://c84o7lutlgdk2" path="res://models/green_apple.glb" id="1_tk748"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_tk748"]
+radius = 0.865
+
+[node name="green_apple" unique_id=1252760644 instance=ExtResource("1_tk748")]
+collision_layer = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." index="1" unique_id=332390846]
+shape = SubResource("SphereShape3D_tk748")
