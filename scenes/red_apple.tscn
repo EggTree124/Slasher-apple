@@ -2,11 +2,20 @@
 
 [ext_resource type="PackedScene" uid="uid://benkryx24tpqi" path="res://models/red_apple.glb" id="1_8tv08"]
 
-[sub_resource type="SphereShape3D" id="SphereShape3D_qmwig"]
-radius = 0.865
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_tk748"]
+bounce = 0.35
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_8tv08"]
+radius = 0.4
 
 [node name="red_apple" unique_id=901358778 instance=ExtResource("1_8tv08")]
-collision_mask = 0
+collision_layer = 2
+collision_mask = 3
+physics_material_override = SubResource("PhysicsMaterial_tk748")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="." index="1" unique_id=1767175209]
-shape = SubResource("SphereShape3D_qmwig")
+[node name="Cube_001" parent="." index="0" unique_id=1953160667]
+transform = Transform3D(0.026, 0, 0, 0, 0.026, 0, 0, 0, 0.026, 0, 0.7646681, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." index="1" unique_id=1827158017]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.4789989, 0)
+shape = SubResource("SphereShape3D_8tv08")
