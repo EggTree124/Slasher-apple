@@ -1,4 +1,4 @@
-extends StaticBody3D
+extends AnimatableBody3D
 
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
 

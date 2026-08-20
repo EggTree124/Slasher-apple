@@ -32,12 +32,12 @@ shadow_enabled = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.25284338, 0, 1.0808935)
 
 [node name="Camera3D" type="Camera3D" parent="." unique_id=1284784466]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.1204247, 0.19545478, -1.3985194)
+transform = Transform3D(0.5863123, 0, 0.8100851, 0, 1, 0, -0.8100851, 0, 0.5863123, -1.4023896, 0.19545478, -1.7124915)
 fov = 58.4
 
 [node name="knife" parent="." unique_id=1590854619 instance=ExtResource("3_lnu2h")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.0443487, 0.060937285, -2.0252547)
 
 [node name="red_apple" parent="." unique_id=901358778 instance=ExtResource("4_lbhrr")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.4273458, -0.51910305, -2.609446)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.4671504, -0.3400002, -2.609446)
 physics_material_override = SubResource("PhysicsMaterial_lbhrr")
