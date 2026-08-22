@@ -8,6 +8,9 @@ bounce = 0.35
 [sub_resource type="SphereShape3D" id="SphereShape3D_k5tsc"]
 radius = 0.881
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_lnu2h"]
+size = Vector3(0.16207519, 0.32036865, 0.15)
+
 [node name="red_apple" unique_id=901358778 instance=ExtResource("1_8tv08")]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
 collision_layer = 2
@@ -16,3 +19,7 @@ physics_material_override = SubResource("PhysicsMaterial_tk748")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." index="1" unique_id=2006480287]
 shape = SubResource("SphereShape3D_k5tsc")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="." index="2" unique_id=1035047253]
+transform = Transform3D(0.87967485, 0.4755756, 0, -0.4755756, 0.87967485, 0, 0, 0, 1, 0.3630032, 1.0207278, 0)
+shape = SubResource("BoxShape3D_lnu2h")
