@@ -17,8 +17,6 @@ background_mode = 2
 sky = SubResource("Sky_yqjtg")
 glow_enabled = true
 
-[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_lbhrr"]
-
 [node name="Node3D" type="Node3D" unique_id=7259802]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=98181997]
@@ -32,12 +30,11 @@ shadow_enabled = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.25284338, 0, 1.0808935)
 
 [node name="Camera3D" type="Camera3D" parent="." unique_id=1284784466]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.2751398, 0.19545478, -1.7124915)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.2751398, 0.13639712, -1.7124915)
 fov = 58.4
 
 [node name="knife" parent="." unique_id=1590854619 instance=ExtResource("3_lnu2h")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.0443487, 0.060937285, -2.0252547)
 
 [node name="red_apple" parent="." unique_id=901358778 instance=ExtResource("4_lbhrr")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.4671504, -0.3400002, -2.609446)
-physics_material_override = SubResource("PhysicsMaterial_lbhrr")
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -2.395175, 1.537097, -2.6319504)

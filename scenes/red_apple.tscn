@@ -5,17 +5,14 @@
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_tk748"]
 bounce = 0.35
 
-[sub_resource type="SphereShape3D" id="SphereShape3D_8tv08"]
-radius = 0.4
+[sub_resource type="SphereShape3D" id="SphereShape3D_k5tsc"]
+radius = 0.881
 
 [node name="red_apple" unique_id=901358778 instance=ExtResource("1_8tv08")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
 collision_layer = 2
 collision_mask = 3
 physics_material_override = SubResource("PhysicsMaterial_tk748")
 
-[node name="Cube_001" parent="." index="0" unique_id=1953160667]
-transform = Transform3D(0.026, 0, 0, 0, 0.026, 0, 0, 0, 0.026, 0, 0.7646681, 0)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="." index="1" unique_id=1827158017]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.4789989, 0)
-shape = SubResource("SphereShape3D_8tv08")
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." index="1" unique_id=2006480287]
+shape = SubResource("SphereShape3D_k5tsc")
