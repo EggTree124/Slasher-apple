@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://cjndrnuhkyl8t"]
 
+[ext_resource type="Script" uid="uid://8wh80ax5nf7w" path="res://scenes/control.gd" id="1_lbhrr"]
 [ext_resource type="PackedScene" uid="uid://6mdsrlw2ynck" path="res://scenes/map.tscn" id="1_uwrxv"]
 [ext_resource type="PackedScene" uid="uid://bu18ogan3l0gr" path="res://scenes/knife.tscn" id="3_lnu2h"]
 [ext_resource type="PackedScene" uid="uid://b6mgnnc4ym2pj" path="res://scenes/red_apple.tscn" id="4_lbhrr"]
@@ -24,6 +25,7 @@ layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
+script = ExtResource("1_lbhrr")
 
 [node name="Panel" type="Panel" parent="Control" unique_id=1651556489]
 layout_mode = 1
