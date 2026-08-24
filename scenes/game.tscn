@@ -89,4 +89,4 @@ fov = 58.4
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.0443487, 0.060937285, -2.0252547)
 
 [node name="red_apple" parent="." unique_id=901358778 instance=ExtResource("4_lbhrr")]
-transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -2.6012342, 0.5778986, -2.6307948)
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -2.6012342, 1.096855, -2.6307948)
