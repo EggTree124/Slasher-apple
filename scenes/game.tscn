@@ -52,17 +52,10 @@ grow_vertical = 0
 alignment = 1
 metadata/_edit_use_anchors_ = true
 
-[node name="RichTextLabel" type="Label" parent="Control/Panel/HBoxContainer" unique_id=910808948]
+[node name="RichTextLabel" type="Label" parent="Control/Panel/HBoxContainer" unique_id=910808948 groups=["score_label"]]
 layout_mode = 2
 theme_override_font_sizes/font_size = 87
 text = "0"
-
-[node name="Button" type="Button" parent="Control/Panel/HBoxContainer" unique_id=402183257]
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 4
-theme_override_font_sizes/font_size = 80
-text = "UPGRADE KNIFE"
 
 [node name="Button2" type="Button" parent="Control/Panel/HBoxContainer" unique_id=1629250433]
 layout_mode = 2
@@ -90,3 +83,5 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.0443487, 0.060937285, -2.0
 
 [node name="red_apple" parent="." unique_id=901358778 instance=ExtResource("4_lbhrr")]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -2.6012342, 1.096855, -2.6307948)
+
+[connection signal="pressed" from="Control/Panel/HBoxContainer/Button2" to="Control" method="_on_button_2_pressed"]
