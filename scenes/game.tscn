@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://8wh80ax5nf7w" path="res://scenes/control.gd" id="1_lbhrr"]
 [ext_resource type="PackedScene" uid="uid://6mdsrlw2ynck" path="res://scenes/map.tscn" id="1_uwrxv"]
+[ext_resource type="Texture2D" uid="uid://dx4x3xkvg0jtu" path="res://models/BUTTON.png" id="2_iywne"]
 [ext_resource type="PackedScene" uid="uid://bu18ogan3l0gr" path="res://scenes/knife.tscn" id="3_lnu2h"]
 [ext_resource type="PackedScene" uid="uid://b6mgnnc4ym2pj" path="res://scenes/red_apple.tscn" id="4_lbhrr"]
 
@@ -23,8 +24,10 @@ glow_enabled = true
 [node name="Control" type="Control" parent="." unique_id=1247557871]
 layout_mode = 3
 anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
+offset_left = -27.0
+offset_top = 156.0
+offset_right = 13.0
+offset_bottom = 196.0
 script = ExtResource("1_lbhrr")
 
 [node name="Panel" type="Panel" parent="Control" unique_id=1651556489]
@@ -57,12 +60,11 @@ layout_mode = 2
 theme_override_font_sizes/font_size = 87
 text = "0"
 
-[node name="Button2" type="Button" parent="Control/Panel/HBoxContainer" unique_id=1629250433]
+[node name="Button2" type="TextureButton" parent="Control/Panel/HBoxContainer" unique_id=940899417]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
-theme_override_font_sizes/font_size = 80
-text = "UPGRADE SPEED"
+texture_normal = ExtResource("2_iywne")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=98181997]
 environment = SubResource("Environment_lnu2h")

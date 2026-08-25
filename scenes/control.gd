@@ -1,6 +1,7 @@
 extends Control
 @onready var rich_text_label: Label = $Panel/HBoxContainer/RichTextLabel
-@onready var button_2: Button = $Panel/HBoxContainer/Button2
+@onready var button_2: TextureButton = $Panel/HBoxContainer/Button2
+
 
 func _ready() -> void:
 	add_to_group("hud")
