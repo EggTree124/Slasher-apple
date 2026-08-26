@@ -2,6 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://c20vm5d38nhij" path="res://models/knife.glb" id="1_ufhdc"]
 [ext_resource type="Script" uid="uid://ce4msrlnegqd2" path="res://scenes/knife.gd" id="2_syuqf"]
+[ext_resource type="AudioStream" uid="uid://cde6fh5k123w2" path="res://audios/slash.ogg" id="3_amocf"]
 
 [sub_resource type="Animation" id="Animation_ufhdc"]
 length = 0.001
@@ -48,6 +49,10 @@ script = ExtResource("2_syuqf")
 
 [node name="Cube" parent="." index="0" unique_id=587957064]
 transform = Transform3D(-0.00107086, -0.0012617054, 0.12627809, -0.12284346, 0.029288376, -0.00074909924, -0.0292784, -0.12283918, -0.0014756337, 0, 0, 0)
+
+[node name="Slash" type="AudioStreamPlayer3D" parent="Cube" index="0" unique_id=1442774191]
+transform = Transform3D(-0.06714324, -7.7023225, -1.8357644, -0.07910941, 1.8363926, -7.7020645, 7.917671, -0.046968736, -0.09252265, -0.045275778, 2.1206865, 1.5745149)
+stream = ExtResource("3_amocf")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." index="1" unique_id=1590916134]
 libraries/ = SubResource("AnimationLibrary_amocf")
