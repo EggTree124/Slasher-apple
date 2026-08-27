@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://d0n5cck7ek8tj"]
+
+[ext_resource type="Script" uid="uid://8bmixs1yjwhd" path="res://scenes/gui.gd" id="1_jbthi"]
+
+[node name="Control" type="Control" unique_id=44296158]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_jbthi")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=173755507]
+layout_mode = 0
+offset_left = 298.0
+offset_top = 3.0
+offset_right = 338.0
+offset_bottom = 43.0
+scale = Vector2(35.333893, 3.9613283)
+
+[node name="Button" type="Button" parent="." unique_id=486084332]
+layout_mode = 0
+offset_left = 756.0
+offset_top = 40.0
+offset_right = 1260.0
+offset_bottom = 109.0
+theme_override_font_sizes/font_size = 44
+text = "UPGRADE SLASH SPEED"
+
+[node name="Money" type="Label" parent="." unique_id=1836807735 groups=["money_label"]]
+layout_mode = 0
+offset_left = 378.0
+offset_top = 43.0
+offset_right = 641.0
+offset_bottom = 104.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 44
+
+[node name="Score" type="Label" parent="." unique_id=221536363 groups=["score_label"]]
+layout_mode = 0
+offset_left = 1357.0
+offset_top = 43.0
+offset_right = 1620.0
+offset_bottom = 104.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 44
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
