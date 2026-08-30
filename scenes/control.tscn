@@ -1,0 +1,57 @@
+[gd_scene format=3 uid="uid://curx4cyhb4djq"]
+
+[ext_resource type="Script" uid="uid://8wh80ax5nf7w" path="res://scenes/control.gd" id="1_brbbq"]
+[ext_resource type="FontFile" uid="uid://cdytmbqyq4mdi" path="res://fonts/audex/Audex-Regular.ttf" id="2_qtu10"]
+[ext_resource type="FontFile" uid="uid://dsrncoo6i8rev" path="res://fonts/audex/Audex-Regular.otf" id="3_ee4bf"]
+
+[node name="Control" type="Control" unique_id=1899906920]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_brbbq")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=293557980]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -340.0
+offset_right = 1165.0
+offset_bottom = 340.0
+grow_vertical = 2
+scale = Vector2(0.96, 1)
+theme_override_constants/separation = 21
+
+[node name="Label" type="Label" parent="VBoxContainer" unique_id=1996341988]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_qtu10")
+theme_override_font_sizes/font_size = 113
+text = "APPLE SLASHER"
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="VBoxContainer" unique_id=108934013]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_qtu10")
+theme_override_font_sizes/font_size = 55
+text = "A MINI GAME MADE BY TCERKK"
+horizontal_alignment = 1
+
+[node name="Button" type="Button" parent="VBoxContainer" unique_id=1066628809]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_ee4bf")
+theme_override_font_sizes/font_size = 75
+text = "PLAY"
+
+[node name="Button2" type="Button" parent="VBoxContainer" unique_id=1602157705]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_ee4bf")
+theme_override_font_sizes/font_size = 75
+text = "QUIT"
+
+[connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button2" to="." method="_on_button_2_pressed"]

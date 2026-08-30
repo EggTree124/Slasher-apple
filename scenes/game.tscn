@@ -31,8 +31,8 @@ shadow_enabled = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.25284338, 0, 1.0808935)
 
 [node name="Camera3D" type="Camera3D" parent="." unique_id=1284784466]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.2751398, 0.13639712, -1.7124915)
-fov = 58.4
+transform = Transform3D(1, 0, 0, 0, 0.36842194, 0.9296587, 0, -0.9296587, 0.36842194, -2.221959, 2.0229807, -1.8885834)
+fov = 36.9
 
 [node name="knife" parent="." unique_id=1590854619 instance=ExtResource("3_lnu2h")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.0443487, -0.080257475, -2.0252547)

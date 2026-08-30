@@ -1,0 +1,9 @@
+extends Control
+@onready var button: Button = $VBoxContainer/Button
+@onready var button_2: Button = $VBoxContainer/Button2
+
+func _on_button_pressed() -> void:
+	get_tree().change_scene_to_file("res://scenes/game.tscn")
+
+func _on_button_2_pressed() -> void:
+	get_tree().quit()
