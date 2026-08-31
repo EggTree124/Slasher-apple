@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://ql5avv3ticl0"]
+
+[ext_resource type="Script" uid="uid://bxlvv1e35ffts" path="res://scenes/apple_spawner.gd" id="1_11fbf"]
+[ext_resource type="PackedScene" uid="uid://b6mgnnc4ym2pj" path="res://scenes/red_apple.tscn" id="2_8x10r"]
+
+[node name="AppleSpawner" type="Node3D" unique_id=1880758482]
+script = ExtResource("1_11fbf")
+apple_scene = ExtResource("2_8x10r")
+
+[node name="Timer" type="Timer" parent="." unique_id=701966146]
+autostart = true
+
+[node name="SpawnPoint" type="Marker3D" parent="." unique_id=65881420]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.7921968, 0)

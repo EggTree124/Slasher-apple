@@ -57,7 +57,7 @@ offset_right = 1878.0
 offset_bottom = 776.0
 theme_override_constants/separation = 48
 
-[node name="Money" type="Label" parent="VBoxContainer" unique_id=598665945]
+[node name="Money" type="Label" parent="VBoxContainer" unique_id=598665945 groups=["money_label"]]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.021434637, 0.021434635, 0.021434633, 1)
 theme_override_fonts/font = ExtResource("2_womn8")
@@ -66,12 +66,14 @@ text = "MONEY:"
 
 [node name="Button" type="Button" parent="VBoxContainer" unique_id=2007182910]
 layout_mode = 2
+focus_mode = 0
 theme_override_fonts/font = ExtResource("2_womn8")
 theme_override_font_sizes/font_size = 44
 text = "UPGRADE SLASH SPEED"
 
 [node name="Button2" type="Button" parent="VBoxContainer" unique_id=47642033]
 layout_mode = 2
+focus_mode = 0
 theme_override_fonts/font = ExtResource("2_womn8")
 theme_override_font_sizes/font_size = 44
 text = "UPGRADE INCOME PER
@@ -79,9 +81,12 @@ SLASH"
 
 [node name="Button3" type="Button" parent="VBoxContainer" unique_id=132124272]
 layout_mode = 2
+focus_mode = 0
 theme_override_fonts/font = ExtResource("2_womn8")
 theme_override_font_sizes/font_size = 44
 text = "UPGRADE APPLE SPAWN
 TIME"
 
 [connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button3" to="." method="_on_button_3_pressed"]

@@ -3,7 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://6mdsrlw2ynck" path="res://scenes/map.tscn" id="1_uwrxv"]
 [ext_resource type="PackedScene" uid="uid://bu18ogan3l0gr" path="res://scenes/knife.tscn" id="3_lnu2h"]
 [ext_resource type="PackedScene" uid="uid://d0n5cck7ek8tj" path="res://scenes/GUI.tscn" id="4_iywne"]
-[ext_resource type="PackedScene" uid="uid://b6mgnnc4ym2pj" path="res://scenes/red_apple.tscn" id="4_lbhrr"]
+[ext_resource type="PackedScene" uid="uid://ql5avv3ticl0" path="res://scenes/apple_spawner.tscn" id="4_lbhrr"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_uwrxv"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -31,13 +31,13 @@ shadow_enabled = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.25284338, 0, 1.0808935)
 
 [node name="Camera3D" type="Camera3D" parent="." unique_id=1284784466]
-transform = Transform3D(1, 0, 0, 0, 0.36842194, 0.9296587, 0, -0.9296587, 0.36842194, -2.221959, 2.0229807, -1.8885834)
+transform = Transform3D(1, 0, 0, 0, 0.36842194, 0.9296587, 0, -0.9296587, 0.36842194, -2.221959, 5.6873035, -1.8885834)
 fov = 36.9
 
 [node name="knife" parent="." unique_id=1590854619 instance=ExtResource("3_lnu2h")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.0443487, -0.080257475, -2.0252547)
 
-[node name="red_apple" parent="." unique_id=901358778 instance=ExtResource("4_lbhrr")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.3934214, 0.50633717, -2.4543116)
-
 [node name="Control" parent="." unique_id=44296158 instance=ExtResource("4_iywne")]
+
+[node name="AppleSpawner" parent="." unique_id=1880758482 instance=ExtResource("4_lbhrr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.564984, -0.29089546, -2.4694688)
