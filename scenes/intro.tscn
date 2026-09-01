@@ -69,13 +69,13 @@ shadow_enabled = true
 environment = SubResource("Environment_i2l1n")
 
 [node name="knife" parent="." unique_id=1681394911 instance=ExtResource("1_ioskq")]
-transform = Transform3D(0.073899455, -0.77209, -0.63120174, 0.9972656, 0.0572135, 0.046773344, 2.2351738e-08, -0.6329323, 0.77420706, -0.031604886, 0, 0.2843349)
+transform = Transform3D(0.073899455, -0.77209, -0.63120174, 0.9972656, 0.057213496, 0.046773344, 2.2351738e-08, -0.63293225, 0.77420706, -0.031604886, 0, 0.2843349)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1802175478]
 libraries/ = SubResource("AnimationLibrary_i2l1n")
 
 [node name="Camera3D" type="Camera3D" parent="." unique_id=1957725889]
-transform = Transform3D(1, 0, 0, 0, 0.13812198, 0.9904152, 0, -0.9904152, 0.13812198, -1.8067788, 1.9338958, 0.27740067)
+transform = Transform3D(1, 0, 0, 0, 0.13812199, 0.9904153, 0, -0.9904153, 0.13812199, -2.2933478, 2.7778225, -0.009088337)
 
 [node name="Control" parent="." unique_id=1899906920 instance=ExtResource("3_4bx60")]
 offset_left = -1.0
