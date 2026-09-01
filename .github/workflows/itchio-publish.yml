@@ -1,0 +1,35 @@
+name: Build and Publish to itch.io
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@v5
+
+      - name: Export Godot project
+        id: export
+        uses: firebelley/godot-export@v8.0.0
+        with:
+          godot_executable_download_url: https://github.com/godotengine/godot/releases/download/4.7.1-stable/Godot_v4.7.1-stable_linux.x86_64.zip
+          godot_export_templates_download_url: https://github.com/godotengine/godot/releases/download/4.7.1-stable/Godot_v4.7.1-stable_export_templates.tpz
+          relative_project_path: ./
+          archive_output: true
+
+      - name: Publish to itch.io
+        uses: Ayowel/butler-to-itch@v1.3.1
+        with:
+          butler_key: ${{ secrets.ITCHIO_TOKEN }}
+          itch_user: oscarh1
+          itch_game: slasher-apple
+          version: ${{ github.sha }}
+          files: |
+            ${{ steps.export.outputs.archive_directory }}/Slasher-apple-web.zip
+            ${{ steps.export.outputs.archive_directory }}/Slasher-apple-linux.zip
+            ${{ steps.export.outputs.archive_directory }}/Slasher-apple-windows.zip
