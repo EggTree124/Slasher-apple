@@ -27,7 +27,7 @@ theme_override_constants/separation = 21
 
 [node name="Label" type="Label" parent="VBoxContainer" unique_id=1996341988]
 layout_mode = 2
-theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0.9516961, 0, 0.39787596, 1)
 theme_override_fonts/font = ExtResource("2_qtu10")
 theme_override_font_sizes/font_size = 113
 text = "APPLE SLASHER"
