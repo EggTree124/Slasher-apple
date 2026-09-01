@@ -1,12 +1,8 @@
 [gd_scene format=3 uid="uid://6mdsrlw2ynck"]
 
 [ext_resource type="PackedScene" uid="uid://dxo5gwhbw7fsw" path="res://scenes/table.tscn" id="2_paxxb"]
-[ext_resource type="PackedScene" uid="uid://dpy48scn3imrk" path="res://models/bg.glb" id="3_gldc4"]
 
 [node name="Game" type="Node3D" unique_id=125816360]
-
-[node name="bg" parent="." unique_id=793855342 instance=ExtResource("3_gldc4")]
-transform = Transform3D(4.8389177, 0, 0, 0, 4.8389177, 0, 0, 0, 4.8389177, -2.481434, 0, -4.8754663)
 
 [node name="table" parent="." unique_id=1408413111 instance=ExtResource("2_paxxb")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.8615223, 0, -4.833408)

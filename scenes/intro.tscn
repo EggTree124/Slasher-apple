@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://c20vm5d38nhij" path="res://models/knife.glb" id="1_ioskq"]
 [ext_resource type="Script" uid="uid://ehim8biajywx" path="res://scenes/intro.gd" id="1_yjqpq"]
 [ext_resource type="PackedScene" uid="uid://curx4cyhb4djq" path="res://scenes/control.tscn" id="3_4bx60"]
+[ext_resource type="AudioStream" uid="uid://bqmatxf81plel" path="res://audios/pop.ogg" id="4_i2l1n"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_yjqpq"]
 sky_horizon_color = Color(1.5513475, 1.5685976, 1.5925975, 1)
@@ -68,7 +69,7 @@ shadow_enabled = true
 environment = SubResource("Environment_i2l1n")
 
 [node name="knife" parent="." unique_id=1681394911 instance=ExtResource("1_ioskq")]
-transform = Transform3D(0.073899455, -0.7720901, -0.63120174, 0.9972656, 0.057213504, 0.046773344, 2.2351738e-08, -0.6329323, 0.77420706, -0.031604886, 0, 0.2843349)
+transform = Transform3D(0.073899455, -0.77209, -0.63120174, 0.9972656, 0.0572135, 0.046773344, 2.2351738e-08, -0.6329323, 0.77420706, -0.031604886, 0, 0.2843349)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1802175478]
 libraries/ = SubResource("AnimationLibrary_i2l1n")
@@ -81,3 +82,7 @@ offset_left = -1.0
 offset_top = 13.0
 offset_right = -1.0
 offset_bottom = 13.0
+
+[node name="Pop" type="AudioStreamPlayer2D" parent="." unique_id=523261903]
+position = Vector2(99, 144)
+stream = ExtResource("4_i2l1n")

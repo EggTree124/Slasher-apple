@@ -7,7 +7,8 @@
 script = ExtResource("1_11fbf")
 apple_scene = ExtResource("2_8x10r")
 
-[node name="Timer" type="Timer" parent="." unique_id=701966146]
+[node name="Timer" type="Timer" parent="." unique_id=701966146 groups=["apple_timer"]]
+wait_time = 2.0
 autostart = true
 
 [node name="SpawnPoint" type="Marker3D" parent="." unique_id=65881420]
